@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="title" class="text-center">Formulario Vida Saludable</h1>
+        <p id="description" class="description text-center">
+            "Nunca es tarde para cambiar tu estilo de vida"
+        </p>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <div class="formulario">
+                <form action="">
+                    <label for="name-label">Nombre:</label>
+
+                    <input type="text" id="name-label" name="nombre">
+                    <br> <br>
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido">
+                    <br><br>
+
+                    <label for=email-label">Email:</label>
+                    <input type="email" id="email-label" name="email">
+                    <br><br>
+
+                    <div class="form-group">
+                        <label id="number-label" for="numbe"> Edad <span class="clue">(optional)</span></label>
+                        <input type="number" name="edad" id="number" min="18" max="99" class="form-control"
+                            placeholder="edad" />
+                    </div>
+                    <br>
+
+                    <label for="genero">Sexo:</label>
+                    <br>
+                    <label type="femenino">Femenino</label>
+                    <input type="radio" id="femenino" name="genero">
+                    <label type="masculino">Masculino</label>
+                    <input type="radio" id="masculino" name="genero">
+                    <br><br>
+                    <div class="form-group">
+                        <label>¿Piensas que llevas una Vida saludable?</label>
+                        <br>
+                        <select id="survey-form" name="form-group" class="">
+
+                            <option value="si">Si</option>
+                            <option value="no">No</option>
+                            <option value="poco">Un Poco</option>
+                            <option value="nada">Nada</option>
+                            <br>
+                        </select>
+                        <br>
+                        <div class="opciones">
+                        <input type="checkbox" id="salud" name="salud" label for="salud">Chequear mi Salud</labe>
+                        <br>
+                        <input type="checkbox" id=peso" name="peso" label for="peso">Chequear mi peso</labe>
+                        <br>
+
+                        <input type="checkbox" id="alimentacion" name="alimentacion" label for="alimentacion">Mejorar mi alimentacion</labe>
+                         <br>
+
+                        <input type="checkbox" id="ejercicio" name="ejercicio" label for="ejercicio">Hacer Ejercicio</labe>
+
+                         <br>
+                         <input type="checkbox" id="alcohol" name="alcohol" label for="alcohol">No Consumir Alcohol</labe>
+                        <br>
+
+                        <input type="checkbox" id="fumar" name="fumar"  label for="fumar">No Fumar</labe>
+                         <br>
+                       <input type="checkbox" id="agua" name="agua" label for="agua">Beber abundante agua</labe>
+                        <br>         
+
+                       <input type="checkbox" id="dormir" name="dormir" label for="dormir">Dormir Bien</labe>
+                          <br><br>
+                          </div>
+
+                        <div class="form-group">
+                        <p>¿Tienes algún comentario o sugerencia? </p>
+                        <textarea  id="comentario" class="input-textarea" name="comentario"  placeholder="comentario o sugerencia..."
+                            ></textarea>
+                          </div>
+                      <br>
+                      <br>
+                      <button id="submit" type="submit">Enviar</button>
+
+
+
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
